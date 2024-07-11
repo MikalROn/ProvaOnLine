@@ -15,6 +15,7 @@ public final class Questao {
 		setTipo(tipo);
 		setIdentificacao(identificacao);
 		pergunta = pergunta.replaceAll("%SL% ", ""+'\n');
+		pergunta = pergunta.replaceAll("%TB% ", ""+'\t');
 		setPergunta(pergunta);
 		if (tipo == 'O') {
 			setOpcaoA(opcaoA);
